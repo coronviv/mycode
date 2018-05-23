@@ -2,16 +2,16 @@
 while(True):
    l2proto = input("Enter a network protocol: ") 
 
-   if l2proto == "eth": 
+   if l2proto.lower() == "eth": 
       print("ethernet protocol allowed")
       break
-   elif l2proto == "fc":
+   elif l2proto.lower() == "fc":
       print("fiber channel NOT allowed")
       break
-   elif l2proto == "ifb":
+   elif l2proto.lower() == "ifb":
       print("infiniband NOT allowed")
       break
-   elif l2proto == "otn":
+   elif l2proto.lower() == "otn":
       print("Optical Network allowed")
       break
    else:
