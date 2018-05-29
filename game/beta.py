@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-while(True):
+#
+numwrong=0
+x=5
+#
+while(numwrong<5):
     vmessage = 'This Seattle landmark is '
     print('How high is the Space needle in ft?')
     vconnection = float(input())
@@ -8,14 +12,16 @@ while(True):
         print(vmessage)
         break
     elif vconnection >= 606:
+        numwrong=numwrong+1
         vmessage = vmessage + 'less than that.'
     elif vconnection >= 0:
+        numwrong=numwrong+1
         vmessage = vmessage + 'more than that.'
     else:
+        numwrong=numwrong+1
         vmessage = 'Try again.'
-    print(vmessage)
 #
-while(True):
+while(numwrong<5):
     jmessage = 'This Seattle landmark is ' 
     print('How high is Mount Rainier in ft?')
     jconnection = float(input())
@@ -24,14 +30,20 @@ while(True):
         print(jmessage)
         break
     elif jconnection >= 14412:
+        numwrong=numwrong+1
         jmessage = jmessage + 'less than that.'
     elif jconnection >= 0:
+        numwrong=numwrong+1
         jmessage = jmessage + 'more than that.'
     else:
+        numwrong=numwrong+1
         jmessage = 'Try again.'
-    print(jmessage)
+    if numwrong<5:
+        print('You win!')
+    else:
+        print('Nice try!')
 #
-while(True):
+while(numwrong<5):
     cmessage = 'This Seattle landmark is ' 
     print('How high is the Great Wheel in ft?')
     cconnection = float(input())
@@ -40,14 +52,16 @@ while(True):
         print(cmessage)
         break
     elif cconnection >= 176:
+        numwrong=numwrong+1
         cmessage = cmessage + 'less than that.'
     elif cconnection >= 0:
+        numwrong=numwrong+1
         cmessage = cmessage + 'more than that.'
     else:
+        numwrong=numwrong+1
         cmessage = 'Try again.'
-    print(cmessage)
 #
-while(True):
+while(numwrong<5):
     ymessage = 'This Seattle landmark is ' 
     print('How high is the Doppler building in ft?')
     yconnection = float(input())
@@ -56,9 +70,17 @@ while(True):
         print(ymessage)
         break
     elif yconnection >= 525:
+        numwrong=numwrong+1
         ymessage = ymessage + 'less than that.'
     elif yconnection >= 0:
+        numwrong=numwrong+1
         ymessage = ymessage + 'more than that.'
     else:
+        numwrong=numwrong+1
         ymessage = 'Try again.'
-    print(ymessage)
+if numwrong<5:
+    print('You win!')
+else:
+    print('Nice try!')
+        
+
