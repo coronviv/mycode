@@ -9,7 +9,7 @@ import pyexcel
 #
 # Request data from user
 def get_ip_data():
-    vinput_ip=input("\nWhat is the IP address? ")
+    vinput_ip=input("What is the IP address? ")
     vinput_subnet=input("\nWhat is the subnet associated with this ip? ")
     vinput_vlan=input("\nWhat is the vlan associated with this ip? ")
     v = {"IP": vinput_ip, "subnnet": vinput_subnet, "vlan": vinput_vlan}
